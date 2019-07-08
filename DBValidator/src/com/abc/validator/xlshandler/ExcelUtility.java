@@ -1,4 +1,4 @@
-package com.fedex.validator.xlshandler;
+package com.abc.validator.xlshandler;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,11 +13,11 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-import com.fedex.validator.pojo.TestCases;
+import com.abc.validator.pojo.TestCases;
 
 public class ExcelUtility {
 
-	 public static final String SAMPLE_XLSX_FILE_PATH = "C:\\Users\\wills\\Desktop\\Sindhu\\plan\\projects\\workspace\\DBValidator\\src\\resources\\datasheet\\";
+	 public static final String SAMPLE_XLSX_FILE_PATH = "C:\\Users\\wills\\Documents\\GitHub\\DbValidator\\DBValidator\\resources\\datasheet\\";
 	 
 	 public List<TestCases> readExcelData(String fileName) {
 		

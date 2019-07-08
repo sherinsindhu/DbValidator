@@ -1,4 +1,4 @@
-package com.fedex.validator.queryhandler;
+package com.abc.validator.queryhandler;
 
 public interface IQueryHandler {
 

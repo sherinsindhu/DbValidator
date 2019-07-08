@@ -1,4 +1,4 @@
-package com.fedex.validator.dbconnection;
+package com.abc.validator.dbconnection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 
-import com.fedex.validator.utility.Utility;
+import com.abc.validator.utility.Utility;
 
 public class JDBCConnection {
 
@@ -14,7 +14,7 @@ public class JDBCConnection {
 
 		System.out.println("-------- Oracle JDBC Connection Testing ------");
 		Properties property = Utility.loadProperties(
-				"C:\\Users\\wills\\Desktop\\Sindhu\\plan\\projects\\workspace\\DBValidator\\src\\resources\\db.properties");
+				"C:\\Users\\wills\\Documents\\GitHub\\DbValidator\\DBValidator\\resources\\db.properties");
 		try {
 
 			Class.forName(property.getProperty("DBDriver"));

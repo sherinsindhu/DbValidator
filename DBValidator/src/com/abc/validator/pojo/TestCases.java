@@ -1,4 +1,4 @@
-package com.fedex.validator.pojo;
+package com.abc.validator.pojo;
 
 import java.util.HashMap;
 import java.util.List;

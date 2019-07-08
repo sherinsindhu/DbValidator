@@ -1,4 +1,4 @@
-package com.fedex.validator.utility;
+package com.abc.validator.utility;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

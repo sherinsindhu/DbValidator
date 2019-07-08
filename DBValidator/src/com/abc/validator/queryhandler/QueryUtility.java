@@ -1,11 +1,11 @@
-package com.fedex.validator.queryhandler;
+package com.abc.validator.queryhandler;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import com.fedex.validator.xlshandler.ExcelUtility;
+import com.abc.validator.xlshandler.ExcelUtility;
 
 public class QueryUtility {
 

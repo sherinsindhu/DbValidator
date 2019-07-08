@@ -1,11 +1,11 @@
-package com.fedex.validator.queryhandler;
+package com.abc.validator.queryhandler;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.fedex.validator.dbconnection.JDBCConnection;
+import com.abc.validator.dbconnection.JDBCConnection;
 
 public class SimpleJDBCQueryHandle implements IQueryHandler{
 

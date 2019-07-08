@@ -1,22 +1,22 @@
-package com.fedex.validator.main;
+package com.abc.validator.main;
 
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.List;
 
-import com.fedex.validator.pojo.TestCases;
-import com.fedex.validator.queryhandler.IQueryHandler;
-import com.fedex.validator.queryhandler.QueryUtility;
-import com.fedex.validator.queryhandler.SimpleJDBCQueryHandle;
-import com.fedex.validator.xlshandler.ExcelUtility;
+import com.abc.validator.pojo.TestCases;
+import com.abc.validator.queryhandler.IQueryHandler;
+import com.abc.validator.queryhandler.QueryUtility;
+import com.abc.validator.queryhandler.SimpleJDBCQueryHandle;
+import com.abc.validator.xlshandler.ExcelUtility;
 
 public class Validate {
 	public static void main(String arg[]) {
 		ExcelUtility excelUtility = new ExcelUtility();
 		List<TestCases> testcases =excelUtility.readExcelData("expectedResults.xlsx");
 		QueryUtility queryUtility = new QueryUtility();
-		List<String> validationQuery =queryUtility.readValidtionQuery("C:\\\\Users\\\\wills\\\\Desktop\\\\Sindhu\\\\plan\\\\projects\\\\workspace\\\\DBValidator\\\\src\\\\resources\\\\query\\\\validationQuery.txt");
+		List<String> validationQuery =queryUtility.readValidtionQuery("C:\\Users\\wills\\Documents\\GitHub\\DbValidator\\DBValidator\\resources\\query\\validationQuery.txt");
 		Validate validate = new Validate();
 		validate.compareResults(testcases,validationQuery);
 	}
