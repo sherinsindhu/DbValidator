@@ -1,2 +1,0 @@
-SELECT * FROM employee e;
-SELECT username FROM tbl_users t;
